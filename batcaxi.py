@@ -221,11 +221,13 @@ while True:
         if clicou_errado == False:
 
             tela.blit(img_fundo2,(0,0))
-        
-            integral = "Para continuar jogando, digite o resultado de ∫{}xcos(x²)dx, substituindo o valor de x por 0".format(pontos)
+            questao = '∫{}xcos(x²) dx'.format(pontos)
             
-            game_over = exibe_texto(integral, 12, (0,0,0))
-            tela.blit(game_over, (largura/10, altura/1.3))
+            game_over = exibe_texto(questao, 16, (0,0,0))
+            go2 = exibe_texto("Para continuar jogando, substitua x por 0 no resultado da integral", 15, (0,0,0) )
+
+            tela.blit(game_over, (largura/2.6, altura/1.4))
+            tela.blit(go2, (largura/7.5, altura/1.3))
 
             if pontos % 100 == 0: pontos += 1 
         
