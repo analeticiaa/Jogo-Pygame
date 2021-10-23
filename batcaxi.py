@@ -188,7 +188,7 @@ while True:
 
             if colidiu == False: 
                 if event.key == K_SPACE:
-                    batman.pular()
+                    
                     if batman.rect.y != batman.posicao_inicial_y: pass
                     else: batman.pular()
 
