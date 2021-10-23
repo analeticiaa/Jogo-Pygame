@@ -88,8 +88,7 @@ class Batman(pygame.sprite.Sprite):
         else:
             if self.rect.y < altura-70-48:
                 self.rect.y += 20
-            else: self.rect.y = altura-70-48
-           
+            else: self.rect.y = altura-70-48           
 
         if self.index_lista > 2: self.index_lista = 0
         self.index_lista += 0.25
@@ -211,7 +210,6 @@ while True:
     
     todas_as_sprites.draw(tela)
 
-
    
    # se não ocorrer colissões atualiza as sprites
     if colisoes and colidiu == False: 
@@ -237,12 +235,10 @@ while True:
             pygame.time.delay(150)
             clicou_errado = False
 
-      
-
     else: 
         pontos += 1
         todas_as_sprites.update()
-        texto_pontos = exibe_texto(pontos, 40, (54,54,54))
+        texto_pontos = exibe_texto(pontos, 40, (25,25,112))
 
     tela.blit(texto_pontos, (520,30))
     
